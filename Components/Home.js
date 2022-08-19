@@ -10,6 +10,7 @@ const Home = () => {
                         className="max-w-sm rounded-lg shadow-2xl"
                         width={500}
                         height={450}
+                        alt="home"
                     />
                     <div>
                         <h1 className="text-5xl font-bold">We Build

@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "Villa on Washington Avenue",
+        "img": "https://luxury-living-1815d.web.app/static/media/pic1.0bc785bd44b6115340a4.png",
+        "location": "Dhaka, Bangladesh"
+    },
+    {
+        "id": 2,
+        "name": "Luxury villa in Rego Park",
+        "img": "https://luxury-living-1815d.web.app/static/media/pic3.304c95cf44ecdd535593.png",
+        "location": "Dhaka, Bangladesh"
+    },
+    {
+        "id": 3,
+        "name": "Gorgeous house",
+        "img": "https://luxury-living-1815d.web.app/static/media/pic2.d6ce845d4b5f4b0110c8.png",
+        "location": "Dhaka, Bangladesh"
+    }
+
+]

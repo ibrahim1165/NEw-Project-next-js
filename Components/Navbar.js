@@ -20,6 +20,11 @@ const Navbar = () => {
           <a>About</a>
         </Link>
             </li>
+            <li tabIndex="0">
+        <Link href="/contact">
+          <a>Contact</a>
+        </Link>
+        </li>
         </ul>
       </div>
       <a className="btn btn-ghost normal-case text-xl text-white">Home Builder</a>
@@ -37,7 +42,7 @@ const Navbar = () => {
         </Link>
         </li>
         <li tabIndex="0">
-        <Link href="/Contact">
+        <Link href="/contact">
           <a>Contact</a>
         </Link>
         </li>
