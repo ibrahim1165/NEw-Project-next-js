@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
@@ -5,13 +6,16 @@ import Navbar from '../Components/Navbar'
 const about = () => {
   return (
     <div>
-        <Navbar />
-        about
-        
-        
-        
-        <Footer />
-        </div>
+      <Head>
+        <title>about</title>
+      </Head>
+      <Navbar />
+      about
+
+
+
+      <Footer />
+    </div>
   )
 }
 

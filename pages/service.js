@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar';
 import Image from 'next/image'
 import Footer from '../Components/Footer';
+import Head from 'next/head';
 
 export const getStaticProps = async () => {
     const res = await fetch('https://tranquil-journey-28375.herokuapp.com/service');
@@ -12,13 +13,20 @@ export const getStaticProps = async () => {
         }
     }
 }
-const Service = ({ data }) => {
+const service = ({ data }) => {
     return (
         <div>
+            <Head>
+                <title>Service</title>
+            </Head>
             <Navbar />
+            <div className="text-center  my-12">
+                <h4>Service</h4>
+                <h1 className="text-3xl font-bold">We re an agency tailored to all<br /> clients needs that always delivers</h1>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mx-auto px-8 mt-8">
                 {
-                    data.map(d => {
+                    data?.map(d => {
                         return <div key={d._id}>
                             <div className='mb-12'>
                                 <div className="card w-[360px] h-[335px] bg-base-100 shadow-x items-center">
@@ -38,9 +46,9 @@ const Service = ({ data }) => {
                                             enim velit mollit
                                         </p>
                                     </div>
-                                    {/* <div className="text-center my-4">
-                <Link to={`/order/${_id}`} className="btn btn-accent">Order Now</Link>
-            </div> */}
+                                    <div>
+                                        <button className="btn btn-primary">Order Now</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -52,4 +60,4 @@ const Service = ({ data }) => {
     )
 }
 
-export default Service
+export default service
